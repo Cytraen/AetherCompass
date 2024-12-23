@@ -10,7 +10,7 @@ internal static class Sound
 
 	static Sound()
 	{
-		var addr = Plugin.SigScanner.ScanText("E8 ?? ?? ?? ?? 4D 39 BE");
+		var addr = Plugin.SigScanner.ScanText("E8 ?? ?? ?? ?? 45 0F B7 C5");
 		playSound ??= Marshal.GetDelegateForFunctionPointer<PlaySoundDelegate>(addr);
 	}
 
